@@ -138,7 +138,7 @@ section svg {
     fill: white;
 }
 
-#homeSection {
+#homeSection,#ContactMeSection {
     background: linear-gradient(
                 rgba(0, 0, 0, 0.6),
                 rgba(3, 0, 36, 0.6)
@@ -184,7 +184,9 @@ h3 {
     font-size: var(--ref-h3);
     color: #008CBA;
 }
-
+h3 link {
+    fill: #008CBA;
+}
 p {
     font-size: 18px;
 }
@@ -210,20 +212,20 @@ p {
     height: 10vh;
 }
 
-#skillsSection,#ContactMeSection {
+#skillsSection {
     background-color: #262d36;
     color: white;
 }
-
 
 #skillsSection,#ContactMeSection h3 {
     color: white;
 }
 
+
 .card {
     float: left;
     transition: 0.3s;
-    width: 40%;
+    width: 50%;
 }
 
 .cardn {
@@ -247,9 +249,7 @@ p {
 
 
 .cardp p {
-    /* letter-spacing: .1em; */
     text-align: justify;
-    /* font-size: 25px; */
 }
   
 .card:hover {
