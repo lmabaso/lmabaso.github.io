@@ -15,12 +15,13 @@
     --ref-h3: calc(var(--ref-font-sizes) * .69);
 
 }
+
 body {
-    font-family: 'Mulish';
-    font-size:14px; 
+    font-family: 'Mulish'; 
     color: #666666;
     /* width: ; */
 }
+
 .left, .left-side, .pull-left {float:left;}
 .right, .right-side, .pull-right {float:right;}
 .clear {clear:both;}
@@ -64,6 +65,16 @@ nav {
     padding-right: 20px;
 }
 
+nav svg {
+    width: 24;
+    height: 24;
+    fill: #666666;
+}
+
+svg:hover {
+    fill: #008CBA;
+  }
+
 .top-nav {
     /* background-color: #333; */
     padding-right: var(--side-nav-width);
@@ -85,7 +96,7 @@ nav .seperaters {
 }
 
 .top-nav a {
-    color: white;
+    color: #008CBA;
     float: right;
     text-align: center;
     padding: 14px 16px;
@@ -117,6 +128,14 @@ nav img:hover {
 section {
     height: 100vh;
     width: 100vw;
+    padding-left: 18vw;
+    padding-right: 18vw;
+}
+
+section svg {
+    height: 1em;
+    width: 1em;
+    fill: white;
 }
 
 #homeSection {
@@ -124,11 +143,7 @@ section {
                 rgba(0, 0, 0, 0.6),
                 rgba(3, 0, 36, 0.6)
                 );
-    /* position: fixed; */
     color: white;
-    /* font-weight: 1000; */
-    padding-left: 18vw;
-    /* position: calc(500px / 2); */
 }
 
 .buttonFilled {
@@ -156,30 +171,28 @@ section {
     border-radius: 5px;
 }
 
-
-
-
-.homeSection h1 {
+h1 {
     font-size: var(--ref-h1);
     letter-spacing: .05em;
 }
 
-.homeSection h2 {
+h2 {
     font-size: var(--ref-h2);
 }
 
-.homeSection h3 {
-    font-size: calc(var(--ref-h1) * .69);
-    font-family: 'Mulish';
+h3 {
+    font-size: var(--ref-h3);
     color: #008CBA;
 }
 
-.homeSection p {
+p {
     font-size: 18px;
+}
+
+.homeSection p {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .1em solid white;  /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    /* letter-spacing: .01em; */
     animation: typing 4.5s steps(40, end),
                 blink-caret .75s step-end infinite;
 }
@@ -188,16 +201,69 @@ section {
     height: 30vh;
 }
 
-#section2 {
+
+.everySection {
     background-color: oldlace;
-    padding-left: 100px;
-    height: 500px;
 }
-#section3 {
-    background-color: maroon;
-    padding-left: 100px;
-    height: 500px;
+
+.everySection .seperaters {
+    height: 10vh;
 }
+
+#skillsSection,#ContactMeSection {
+    background-color: #262d36;
+    color: white;
+}
+
+
+#skillsSection,#ContactMeSection h3 {
+    color: white;
+}
+
+.card {
+    float: left;
+    transition: 0.3s;
+    width: 40%;
+}
+
+.cardn {
+    float: left;
+    transition: 0.3s;
+    width: 20%;
+}
+
+.cardp {
+    transition: 0.3s;
+     width: 50%; 
+    padding-top: 50px;
+    font-size: 23px;
+}
+
+.cardp img {
+    float: left;
+    width: 70%;
+    padding-right: 25px;
+}
+
+
+.cardp p {
+    /* letter-spacing: .1em; */
+    text-align: justify;
+    /* font-size: 25px; */
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.container {
+    padding: 16px 16px;
+}
+
 
 /* The typing effect */
 @keyframes typing {
