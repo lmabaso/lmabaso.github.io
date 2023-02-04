@@ -56,11 +56,9 @@ img {max-width:100%;}
 }
 
 nav {
-    /* background-color: lightgrey; */
     position: fixed;
     left: 0;
     width: var(--side-nav-width);
-    /* height: 100%; */
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -73,10 +71,9 @@ nav svg {
 
 svg:hover {
     fill: #008CBA;
-  }
+}
 
 .top-nav {
-    /* background-color: #333; */
     padding-right: var(--side-nav-width);
     margin-left: var(--side-nav-width);
     width: 100%;
@@ -87,8 +84,6 @@ svg:hover {
 main {
     float: left;
     top: 0;
-    /* margin-left: var(--side-nav-width); */
-    /* background-color: aqua; */
 }
 
 nav .seperaters {
@@ -102,8 +97,6 @@ nav .seperaters {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    /* left: 0; */
-    /* margin: 10px 0; */
 }
 
 top-nav a:hover {
@@ -128,8 +121,8 @@ nav img:hover {
 section {
     height: 100vh;
     width: 100vw;
-    padding-left: 18vw;
-    padding-right: 18vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
 section svg {
@@ -188,15 +181,7 @@ h3 link {
     fill: #008CBA;
 }
 p {
-    font-size: 18px;
-}
-
-.homeSection p {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .1em solid white;  /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    animation: typing 4.5s steps(40, end),
-                blink-caret .75s step-end infinite;
+    font-size: calc(var(--ref-h3)*.3);
 }
 
 .homeSection .seperaters {
@@ -262,18 +247,4 @@ p {
   
 .container {
     padding: 16px 16px;
-}
-
-
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-  
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to 
-    { border-color: transparent; font-size: 18px; } 
-    40% { border-color: white; font-size: 18px;}
 }
