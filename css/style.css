@@ -2,383 +2,375 @@
 @import url("https://fonts.googleapis.com/css?family=Mulish");
 
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  font-family: "Mulish";
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: "Mulish";
 
-  --side-nav-width: 100px;
-  --ref-font-sizes: 12.4vh;
-  --ref-h1: var(--ref-font-sizes);
-  --ref-h2: calc(var(--ref-font-sizes) * 0.39);
-  --ref-h3: calc(var(--ref-font-sizes) * 0.69);
+    --side-nav-width: 100px;
+    --ref-font-sizes: 12.4vh;
+    --ref-h1: var(--ref-font-sizes);
+    --ref-h2: calc(var(--ref-font-sizes) * 0.39);
+    --ref-h3: calc(var(--ref-font-sizes) * 0.69);
 
-  --default-seperator-hight: 30vh;
+    --default-seperator-hight: 30vh;
 
-  --color-palette-background-1: #071f2a;
-  --color-palette-background-2: oldlace;
-  --color-palette-1: white;
-  --color-palette-2: black;
-  --color-palette-3: #1685b8;
-  --color-palette-hover: #0f0;
+    --color-palette-background-1: #071f2a;
+    --color-palette-background-2: oldlace;
+    --color-palette-1: white;
+    --color-palette-2: black;
+    --color-palette-3: #1685b8;
+    --color-palette-hover: #0f0;
 }
 
 body {
-  color: #666666;
-  /* width: ; */
+    color: #666666;
+    /* width: ; */
 }
 
 .left,
 .left-side,
 .pull-left {
-  float: left;
+    float: left;
 }
 
 .right,
 .right-side,
 .pull-right {
-  float: right;
+    float: right;
 }
 
 .clear {
-  clear: both;
+    clear: both;
 }
 
 .clearfix:after {
-  clear: both;
-  content: "";
-  display: block;
+    clear: both;
+    content: "";
+    display: block;
 }
 
 a {
-  text-decoration: none;
-  color: var(--color-palette-3);
+    text-decoration: none;
+    color: var(--color-palette-3);
 }
 
 .align-left {
-  text-align: left;
+    text-align: left;
 }
 
 .align-center {
-  text-align: center;
+    text-align: center;
 }
 
 .align-right {
-  text-align: right;
+    text-align: right;
 }
 
 .vertical-align {
-  vertical-align: top;
+    vertical-align: top;
 }
 
 .relative {
-  position: relative;
+    position: relative;
 }
 
 .absolute {
-  position: absolute;
+    position: absolute;
 }
 
 .fixed {
-  position: fixed;
+    position: fixed;
 }
 
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .underline {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 /* end initialize */
 
 /* variables */
 #theBGVid {
-  filter: blur(9px);
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+    filter: blur(9px);
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 nav {
-  width: var(--side-nav-width);
-  left: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  /* background-color: #071f2a; */
+    width: var(--side-nav-width);
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* background-color: #071f2a; */
 }
 
 nav svg {
-  fill: var(--color-palette-3);
+    fill: var(--color-palette-3);
 }
 
 svg:hover {
-  fill: var(--color-palette-hover);
+    fill: var(--color-palette-hover);
+    color: var(--color-palette-hover);
 }
 
 nav .seperaters {
-  height: calc(100vh - 150px);
+    height: calc(100vh - 150px);
 }
 
 .top-nav {
-  overflow: hidden;
-  top: 0;
-  padding-right: var(--side-nav-width);
-  width: 100%;
+    overflow: hidden;
+    top: 0;
+    padding-right: var(--side-nav-width);
+    width: 100%;
 }
 
 .top-nav a {
-  padding: 14px 16px;
-  display: block;
-  font-size: 17px;
+    padding: 14px 16px;
+    display: block;
+    font-size: 17px;
 }
 
 .top-nav a:hover {
-  background-color: var(--color-palette-background-2);
-  color: var(--color-palette-background-1);
-}
-
-.top-nav a:active {
-  background-color: #04aa6d;
-  color: white;
+    background-color: var(--color-palette-background-2);
+    color: var(--color-palette-background-1);
 }
 
 section {
-  height: 100vh;
-  width: 100vw;
-  padding-left: 15vw;
-  padding-right: 15vw;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
 section svg {
-  height: 1em;
-  width: 1em;
-  fill: white;
+    height: 2em;
+    width: 2em;
+    fill: var(--color-palette-3);
+    color: var(--color-palette-3);
 }
 
 #homeSection,
 #ContactMeSection {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(3, 0, 36, 0.6));
-  color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(3, 0, 36, 0.6));
+    color: white;
 }
 
 #AboutMeSection,
 #projectsSection {
-  background-color: var(--color-palette-background-2);
-  color: black;
+    background-color: var(--color-palette-background-2);
+    color: black;
 }
 
 #skillsSection,
 #workSection {
-  background-color: var(--color-palette-background-1);
-  color: white;
+    background-color: var(--color-palette-background-1);
+    color: white;
 }
 
 #skillsSection,
 #ContactMeSection,
 h3 {
-  color: white;
+    color: white;
 }
 
 #AboutMeSection .seperaters {
-  height: 10vh;
+    height: 10vh;
 }
 
 #skillsSection .seperaters {
-  height: 10vh;
+    height: 10vh;
 }
 
 #ContactMeSection .seperaters {
-  height: 10vh;
+    height: 10vh;
 }
 
 #projectsSection .seperaters {
-  height: 10vh;
+    height: 10vh;
 }
 
 #workSection .seperaters {
-  height: 10vh;
+    height: 10vh;
 }
 
 .buttonFilled {
-  background-color: var(--color-palette-3);
-  padding: 15px 32px;
-  color: white;
-  border: none;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 5px;
+    background-color: var(--color-palette-3);
+    padding: 15px 32px;
+    color: white;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
 .buttonHollowed {
-  border: 2px solid var(--color-palette-3);
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
+    border: 2px solid var(--color-palette-3);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 h1 {
-  font-size: var(--ref-h1);
-  letter-spacing: 0.05em;
+    font-size: var(--ref-h1);
+    letter-spacing: 0.05em;
 }
 
 h2 {
-  font-size: var(--ref-h2);
+    font-size: var(--ref-h2);
 }
 
 h3 {
-  font-size: var(--ref-h3);
-  color: #008cba;
+    font-size: var(--ref-h3);
+    color: #008cba;
 }
 
 h3 link {
-  fill: #008cba;
+    fill: #008cba;
 }
 
 p {
-  font-size: calc(var(--ref-h3) * 0.3);
+    font-size: calc(var(--ref-h3) * 0.3);
 }
 
 .homeSection .seperaters {
-  height: 30vh;
+    height: 30vh;
 }
 
-.everySection .seperaters {
-  height: 10vh;
+.skillcards {
+    height: calc(90vh - var(--default-seperator-hight));
+    overflow: auto;
 }
 
 .card {
-  float: left;
-  transition: 0.3s;
-  width: 50%;
-}
-
-.cardn {
-  float: left;
-  transition: 0.3s;
-  width: 20%;
-}
-
-.cardp {
-  transition: 0.3s;
-  width: 50%;
-  padding-top: 50px;
-  font-size: 23px;
-}
-
-.cardp img {
-  float: left;
-  width: 70%;
-  padding-right: 25px;
-}
-
-.cardp p {
-  text-align: justify;
+    float: left;
+    width: 20%;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.cardn:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    color: var(--color-palette-hover);
+    fill: var(--color-palette-hover);
 }
 
 .container {
-  padding: 16px 16px;
+    padding: 16px 16px;
+}
+
+
+.cardp {
+    transition: 0.3s;
+    height: calc(100vh - var(--default-seperator-hight));
+    /* width: 50%; */
+    padding-top: 50px;
+    font-size: 23px;
+    overflow: auto;
+}
+
+.cardp img {
+    float: left;
+    width: 35%;
+    padding-right: 25px;
+}
+
+.cardp p {
+    text-align: justify;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-palette-background-2);
+    background: var(--color-palette-background-2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-palette-3);
+    background: var(--color-palette-3);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-palette-hover);
+    background: var(--color-palette-hover);
 }
 
 .timeline {
-  color: #fff;
-  padding: 30px 20px;
-  height: calc(100vh - var(--default-seperator-hight));
-  overflow: auto;
+    color: #fff;
+    padding: 30px 20px;
+    height: calc(100vh - var(--default-seperator-hight));
+    overflow: auto;
 }
 
 .timeline ul {
-  list-style-type: none;
-  border-left: 2px solid #094a68;
-  padding: 10px 5px;
+    list-style-type: none;
+    border-left: 2px solid #094a68;
+    padding: 10px 5px;
 }
 
 .timeline ul li {
-  padding: 20px 20px;
-  position: relative;
-  cursor: pointer;
-  transition: 0.5s;
+    padding: 20px 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .timeline ul li span {
-  display: inline-block;
-  background-color: #1685b8;
-  border-radius: 25px;
-  padding: 5px 10px;
-  font-size: 15px;
-  text-align: center;
+    display: inline-block;
+    background-color: #1685b8;
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
 }
 
 .timeline ul li .content h3 {
-  color: #34ace0;
-  font-size: 17px;
-  padding-top: 5px;
+    color: #34ace0;
+    font-size: 17px;
+    padding-top: 5px;
 }
 
 .timeline ul li .content p {
-  padding: 5px 0px 15px 0px;
-  font-size: 15px;
+    padding: 5px 0px 15px 0px;
+    font-size: 15px;
 }
 
 .timeline ul li:before {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #34ace0;
-  border-radius: 50%;
-  left: -11px;
-  top: 28px;
-  transition: 0.5s;
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #34ace0;
+    border-radius: 50%;
+    left: -11px;
+    top: 28px;
+    transition: 0.5s;
 }
 
 .timeline ul li:hover {
-  background-color: #124b66;
+    background-color: #124b66;
 }
 
 .timeline ul li:hover:before {
-  background-color: #0f0;
-  box-shadow: 0px 0px 10px 2px #0f0;
+    background-color: #0f0;
+    box-shadow: 0px 0px 10px 2px #0f0;
 }
