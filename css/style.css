@@ -15,7 +15,7 @@
   --ref-h2: calc(var(--ref-font-sizes) * 0.39);
   --ref-h3: calc(var(--ref-font-sizes) * 0.69);
 
-  --default-seperator-hight: 30vh;
+  --default-separator-hight: 30vh;
 
   --color-palette-background-1: #071f2a;
   --color-palette-background-2: oldlace;
@@ -26,7 +26,7 @@
 }
 
 body {
-  color: #666666;
+  color: var(--color-palette-2);
   /* width: ; */
 }
 
@@ -129,7 +129,7 @@ svg:hover {
   color: var(--color-palette-hover);
 }
 
-nav .seperaters {
+nav .separators {
   height: calc(100vh - 150px);
 }
 
@@ -174,7 +174,7 @@ section svg {
 #AboutMeSection,
 #projectsSection {
   background-color: var(--color-palette-background-2);
-  color: black;
+  color: var(--color-palette-2);
 }
 
 #skillsSection,
@@ -182,23 +182,23 @@ section svg {
   background-color: var(--color-palette-background-1);
 }
 
-#AboutMeSection .seperaters {
+#AboutMeSection .separators {
   height: 10vh;
 }
 
-#skillsSection .seperaters {
+#skillsSection .separators {
   height: 10vh;
 }
 
-#ContactMeSection .seperaters {
+#ContactMeSection .separators {
   height: 10vh;
 }
 
-#projectsSection .seperaters {
+#projectsSection .separators {
   height: 10vh;
 }
 
-#workSection .seperaters {
+#workSection .separators {
   height: 10vh;
 }
 
@@ -234,29 +234,32 @@ h2 {
 
 h3 {
   font-size: var(--ref-h3);
-  color: #008cba;
+  color: var(--color-palette-3);
 }
 
 h3 link {
-  fill: #008cba;
+  fill: var(--color-palette-3);
 }
 
 p {
   font-size: calc(var(--ref-h3) * 0.3);
 }
 
-.homeSection .seperaters {
+.homeSection .separators {
   height: 30vh;
 }
 
 .skillcards {
-  height: calc(90vh - var(--default-seperator-hight));
+  height: calc(90vh - var(--default-separator-hight));
   overflow: auto;
 }
 
 .card {
   float: left;
+  border: black;
   width: 20%;
+  color: var(--color-palette-1);
+  padding: 16px 16px;
 }
 
 .card:hover {
@@ -264,14 +267,10 @@ p {
   fill: var(--color-palette-hover);
 }
 
-.container {
-  padding: 16px 16px;
-}
 
 .cardp {
   transition: 0.3s;
-  height: calc(100vh - var(--default-seperator-hight));
-  /* width: 50%; */
+  height: calc(100vh - var(--default-separator-hight));
   padding-top: 50px;
   font-size: 23px;
   overflow: auto;
@@ -305,9 +304,9 @@ p {
 }
 
 .timeline {
-  color: #fff;
+  color: var(--color-palette-1);
   padding: 30px 20px;
-  height: calc(100vh - var(--default-seperator-hight));
+  height: calc(100vh - var(--default-separator-hight));
   overflow: auto;
 }
 
