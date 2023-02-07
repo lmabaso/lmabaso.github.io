@@ -180,13 +180,6 @@ section svg {
 #skillsSection,
 #workSection {
   background-color: var(--color-palette-background-1);
-  color: white;
-}
-
-#skillsSection,
-#ContactMeSection,
-h3 {
-  color: white;
 }
 
 #AboutMeSection .seperaters {
@@ -333,7 +326,7 @@ p {
 
 .timeline ul li span {
   display: inline-block;
-  background-color: #1685b8;
+  background-color: var(--color-palette-3);
   border-radius: 25px;
   padding: 5px 10px;
   font-size: 15px;
@@ -341,7 +334,7 @@ p {
 }
 
 .timeline ul li .content h3 {
-  color: #34ace0;
+  color: var(--color-palette-3);
   font-size: 17px;
   padding-top: 5px;
 }
